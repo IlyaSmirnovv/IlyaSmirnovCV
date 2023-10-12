@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Илья QA</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Фавикон -->
+    <style>
+        body {
+            font-family: 'Arial Black', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Белый фон */
+            color: black; /* Черный цвет текста */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .profile-image {
+            width: 200px; /* Устанавливаем ширину аватарки */
+            height: auto; /* Высота автоматически рассчитывается пропорционально ширине */
+            margin-bottom: 20px; /* Добавляем отступ снизу */
+            border-radius: 50%; /* Закругляем углы аватарки до круга */
+        }
+
+        .name {
+            font-size: 24px; /* Размер шрифта для имени */
+            margin-bottom: 10px; /* Отступ снизу для имени */
+            text-transform: uppercase; /* Преобразование текста в капительные буквы */
+        }
+
+        .position {
+            font-size: 20px; /* Размер шрифта для должности */
+            font-weight: bold; /* Полужирное начертание для должности */
+            margin-bottom: 20px; /* Отступ снизу для должности */
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Расстояние между кнопками */
+            margin-top: 20px;
+        }
+
+        .social-link img {
+            width: 50px; /* Устанавливаем ширину значка */
+            height: 50px; /* Устанавливаем высоту значка */
+            border-radius: 50%; /* Закругляем углы значка до круга */
+            cursor: pointer; /* Задаем курсор указывающий, что значок кликабелен */
+            transition: transform 0.3s ease; /* Плавное изменение размера значка при наведении */
+        }
+
+        .social-link img:hover {
+            transform: scale(1.2); /* Увеличиваем размер значка при наведении */
+        }
+
+        a[href^="mailto:"] {
+            color: black; 
+            text-decoration: none; 
+            font-size: 20px; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="profile-image" src="avatar.png" alt="Ваша аватарка">
+        <div class="name">ИЛЬЯ СМИРНОВ</div>
+        <div class="position">QA ENGINEER</div>
+
+        <div class="social-links">
+            <a class="social-link" href="https://t.me/IlyaSmirnof" target="_blank"><img src="gbc.png" alt="Telegram"></a>
+            <a class="social-link" href="https://www.linkedin.com/in/ilya-smirnov-bb1147296/" target="_blank"><img src="linkin.png" alt="LinkedIn"></a>
+            <a class="social-link" href="https://github.com/IlyaSmirnovv" target="_blank"><img src="githubb.png" alt="Github"></a>
+            <a class="social-link" href="mailto:IlyaSmirnovN@yandex.ru"><img src="512.png" alt="Mail"></a>
+            <a class="social-link" href="ссылка на ваш профиль в Github" target="_blank"><img src="resume.png" alt="Github"></a>
+        </div>
+    </div>
+</body>
+</html>
